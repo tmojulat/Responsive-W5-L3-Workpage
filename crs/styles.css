@@ -7,20 +7,33 @@
 
 body {
     font-family: var(--default-font-family);
-    margin: 30px;
+}
+
+body {
+    margin: 0;
+    font-size: 1 rem;
+    font-weight: 400;
     line-height: 1.5;
+    color: black;
+    background: #fff;
+
 }
 
 h1,h2,h3,h4,h5,h6 {
 color: black;
-font-family: var(--default-font-family);
+font-family: var(--font-family);
 font-weight: bold;
 
 }
 
+.content {
+    margin: 12px;
+}
+
 .content h1 {
-font-size: 64px;
+font-size: 55px;
 line-height: 80px;
+text-align: center;
 }
 
 .content-container {
@@ -34,7 +47,7 @@ line-height: 80px;
 }
 
 @media (min-width: 992px) {
-    .col-lg-6 {
+    .container {
         flex: 0 0 auto;
         width: 50%;
     }
@@ -47,6 +60,12 @@ line-height: 80px;
     }
 }
 
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -55,13 +74,6 @@ line-height: 80px;
 .about-section-content {
     margin: 30px;
 }
-
-.content-container h1 {
-font-size: 64px;
-line-height: 80px;
-line-height: 1.2;
-}
-
 
 .mb-4 {
     margin-bottom: 1.5rem!important;
@@ -73,8 +85,12 @@ line-height: 1.2;
 
 p {
     font-weight: normal;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 30px;
+}
+
+.text-muted {
+    color: #6c757d!important;
 }
 
 .img-fluid {
